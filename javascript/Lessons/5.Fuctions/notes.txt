@@ -1,0 +1,27 @@
+
+// Defination :- A function in JavaScript is a block of code designed to perform a specific task.
+
+//*It runs only when it is called/invoked.
+
+//*Functions help in reusing code, making programs shorter and easier to manage.
+
+//Syntax:- function functionName(parameters) {
+  // code to be executed
+  return result; // optional
+}
+
+// Types to create a function / module
+
+// 1. Using function keyword
+
+function function_name(args[optional]){
+    //function body
+    // return statement(optional)
+}
+
+// 2. ES6(Arrow / Fat Arrow Functions, Modules, Callbacks)
+
+let function_name = (args[optional]){
+    //function body
+    // return statement(optional)
+}
