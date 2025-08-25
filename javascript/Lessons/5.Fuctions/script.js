@@ -91,28 +91,86 @@
 
 // write a function to check wether a number is armstrong number or not
 
-function isAmsterdamNumber(num) {
-    let str = num.toString();
 
-    if (str.length % 2 !== 0) {
-        return false;
-    }
+// let isArmstrong = (num) => {
+//     let digit = 0;
+//     let sum = 0;
+//     for (let i = num; i > 0; i = parseInt(i / 10)) {
+//         digit = i % 10;
+//         sum = sum + (digit * digit * digit);
+//     }
 
-    let half = str.length / 2;
+//     if (sum === num) {
+//         console.log(`${num} is Armstrong number`);
+//     } else {
+//         console.log(`${num} is not a Armstrong number`);
+//     }
+// }
 
-    let firstHalfSum = 0;
-    for (let i = 0; i < half; i++) {
-        firstHalfSum += parseInt(str[i]);
-    }
+// isArmstrong(500);
 
-    let secondHalfSum = 0;
-    for (let i = half; i < str.length; i++) {
-        secondHalfSum += parseInt(str[i]);
-    }
+// wap to check wether a string is pallindrome or not
 
-    return firstHalfSum === secondHalfSum;
-}
+// function isPalindrome(str) {
+//     let reversed = "";
+//     for (let i = str.length - 1; i >= 0; i--) {
+//         reversed = reversed + str.charAt(i);
+//     }
+//     if (str === reversed) {
+//         console.log(str + " is a Palindrome.");
+//     } else {
+//         console.log(str + " is not a Palindrome.");
+//     }
+// }
 
-console.log(isAmsterdamNumber(1230));  
-console.log(isAmsterdamNumber(1234));  
-console.log(isAmsterdamNumber(451236)); 
+
+// isPalindrome("pop");
+// isPalindrome("racer");
+// isPalindrome("chalo");
+// isPalindrome("world");  
+
+
+
+//wap in js to find out unique character within a string
+
+// function findUniqueCharacters(str) {
+//     let result = "";
+
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i];
+
+
+//         if (str.indexOf(char) === str.lastIndexOf(char)) {
+//             result += char;
+//         }
+//     }
+
+//     return result;
+// }
+
+// console.log(findUniqueCharacters("Hey Aditi programming here")); 
+// console.log(findUniqueCharacters("hello"));      
+// console.log(findUniqueCharacters("aabbcc"));      
+
+
+
+// write a function in js to count the number in the string
+
+// function countNumbersInString(str) {
+
+
+//     let count = 0;
+
+//     for (let i = 0; i < str.length; i++) {
+//         if (!isNaN(str[i]) && str[i] !== " ") {
+//             count++;
+//         }
+//     }
+
+//     return count;
+// }
+
+// // Example usage
+// console.log(countNumbersInString("hello123"));   
+// console.log(countNumbersInString("abc2025xyza")); 
+// console.log(countNumbersInString("no digits"));  
